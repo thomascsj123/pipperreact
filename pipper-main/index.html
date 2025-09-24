@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pipper</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="column1">
+      <h1><i class="logo" data-feather="twitter"></i> <span>Pipper</span></h1>
+      <nav class="navi">
+        <ul>
+          <li>
+            <a href="#"><i data-feather="home"></i> <span>Home</span></a>
+          </li>
+          <li>
+            <a href="#"><i data-feather="hash"></i> <span>Explore</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i data-feather="bell"></i> <span>Notifications</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><i data-feather="mail"></i> <span>Messages</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i data-feather="bookmark"></i> <span>Bookmarks</span></a
+            >
+          </li>
+          <li>
+            <a href="#"><i data-feather="list"></i> <span>Lists</span></a>
+          </li>
+          <li>
+            <a href="#"><i data-feather="user"></i> <span>Profile</span></a>
+          </li>
+          <li>
+            <a href="#"
+              ><i data-feather="more-horizontal"></i> <span>More</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="knap rounded-pill">Pip</button>
+    </div>
+
+    <div class="column2">
+      <div class="home">
+        <div class="border-bottom">
+          <h1 class="mt-3">Home</h1>
+        </div>
+        <!-- post input felter -->
+        <div class="border-bottom">
+          <div class="mx-5 my-3">
+            <form id="student-form">
+              <label for="username">Username</label> <br />
+              <input name="username" id="username" class="form-control" /><br />
+              <label for="text">Text</label><br />
+              <textarea
+                id="text"
+                class="form-control mb-2"
+                rows="2"
+                maxlength="255"
+              ></textarea>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="counter"><span id="CharCount">0</span>/255</small>
+
+                <button type="submit" class="btn-post rounded-pill">Pip</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <ul id="students"></ul>
+      </div>
+
+      <div class="load-more-container">
+        <button id="vis-mere" class="rounded-pill knap load-more mt-4 mb-4">
+          Load more
+        </button>
+      </div>
+    </div>
+
+    <div class="column3">
+      <div class="search-container mt-3 mb-3">
+        <i data-feather="search" class="search-icon"></i>
+        <input
+          type="text"
+          class="search form-control rounded-pill"
+          placeholder="Search Pipper"
+        />
+      </div>
+
+      <div class="card border">
+        <div class="card-body pt-4 pb-4">
+          <h4 class="fw-bold mb-4">Trending pips</h4>
+          <ul class="list-unstyled mb-0 text-secondary d-grid gap-4">
+            <li>
+              <a href="#" class="">
+                <h5 class="m-0 fs-6">React 19</h5>
+                <p class="m-0 fs-6 fw-bold text-dark">Trending in Technology</p>
+                <p class="m-0 fs-6">15.2K Pips</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="">
+                <h5 class="m-0 fs-6">#WebDev</h5>
+                <p class="m-0 fs-6 fw-bold text-dark">Trending in Technology</p>
+                <p class="m-0 fs-6">8,456 Pips</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="">
+                <h5 class="m-0 fs-6">TypeScript</h5>
+                <p class="m-0 fs-6 fw-bold text-dark">Trending in Technology</p>
+                <p class="m-0 fs-6">4,892 Pips</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card border mt-3">
+        <div class="card-body pt-4 pb-4">
+          <h4 class="fw-bold mb-4">Who to follow</h4>
+          <ul class="list-unstyled mb-0 text-secondary d-grid gap-4">
+            <li class="d-flex justify-content-between align-items-center">
+              <div
+                class="bg-pipperblue p-2 rounded-circle text-white d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 40px"
+              >
+                <div class="">RE</div>
+              </div>
+              <div class="">
+                <p class="m-0 fs-6 fw-bold text-dark">React</p>
+                <p class="m-0 fs-6">@reactjs</p>
+              </div>
+              <a
+                href="#"
+                class="bg-pipperblue p-2 text-white rounded-pill px-3 py-1 text-decoration-none"
+              >
+                Follow
+              </a>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+              <div
+                class="bg-pipperblue p-2 rounded-circle text-white d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 40px"
+              >
+                <div class="">TY</div>
+              </div>
+              <div class="">
+                <p class="m-0 fs-6 fw-bold text-dark">TypeScript</p>
+                <p class="m-0 fs-6">@typescript</p>
+              </div>
+              <a
+                href="#"
+                class="bg-pipperblue p-2 text-white rounded-pill px-3 py-1 text-decoration-none"
+              >
+                Follow
+              </a>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+              <div
+                class="bg-pipperblue p-2 rounded-circle text-white d-flex justify-content-center align-items-center"
+                style="width: 40px; height: 40px"
+              >
+                <div class="">VE</div>
+              </div>
+              <div class="">
+                <p class="m-0 fs-6 fw-bold text-dark">Vercel</p>
+                <p class="m-0 fs-6">@vercel</p>
+              </div>
+              <a
+                href="#"
+                class="bg-pipperblue p-2 text-white rounded-pill px-3 py-1 text-decoration-none"
+              >
+                Follow
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <template id="student">
+      <div class="border-bottom">
+        <div
+          class="pip-container mx-5 my-2 d-flex align-items-start gap-3"
+        ></div>
+        <img class="avatar" src="" alt="avatar" />
+
+        <div class="pip-container mx-5 my-2">
+          <p class="text"></p>
+        </div>
+        <!-- interactions -->
+        <div class="action d-flex gap-4 mt-1 text-secondary mx-5 mb-2">
+          <span class="d-flex align-items-center gap-2 interact comment"
+            ><i data-feather="message-circle" width="18" height="18"></i>
+            <span class="count">0</span></span
+          >
+          <span class="d-flex align-items-center gap-2 interact repost"
+            ><i data-feather="repeat" width="18" height="18"></i>
+            <span class="count">0</span></span
+          >
+          <span class="d-flex align-items-center gap-2 interact like"
+            ><i data-feather="heart" width="18" height="18"></i>
+            <span class="count">0</span></span
+          >
+        </div>
+      </div>
+    </template>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

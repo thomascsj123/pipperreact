@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.bg-pipperblue {
+  background-color: #26a7de;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.column1 h1 {
+  font-family: "Edu NSW ACT Cursive", cursive;
+  color: #26a7de;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 1.2em;
+  height: 1.2em;
+  stroke-width: 2;
+}
+
+.navi {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  gap: 30px;
+}
+
+.navi p {
+  font-size: 1.3em;
+}
+
+.navi a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.navi ul {
+  list-style-type: none;
+}
+
+.navi svg {
+  width: 1.2em;
+  height: 1.2em;
+  stroke-width: 2;
+  display: block;
+}
+
+.knap {
+  background-color: #26a7de;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 50px;
+  border: none;
+  padding: 10px 15px;
+  width: 70%;
+  box-shadow: none;
+  font-weight: bold;
+}
+.knap:hover {
+  background-color: #249ed2;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.column2 h1 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 50px;
+}
+
+.border-bottom {
+  stroke-width: 2px;
+  border-color: #2f3336;
+}
+
+.counter {
+  font-size: 0.85rem;
+  color: #8b98a5;
+}
+
+.btn-post {
+  background-color: #26a7de;
+  color: white;
+  font-size: 1.2em;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 15px;
+  width: 20%;
+  box-shadow: none;
+  font-weight: bold;
+}
+.btn-post:focus,
+.btn-post:active,
+.btn-post:focus:active {
+  outline: none;
+  box-shadow: none;
+}
+.btn-post:hover {
+  background-color: #249ed2;
+}
+
+#students {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.action {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.interact {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.interact.comment:hover,
+.interact.comment.hover {
+  color: #1d9bf0;
+}
+.interact.repost:hover,
+.interact.repost.active {
+  color: #00ba7c;
+}
+.interact.like:hover,
+.interact.like.active {
+  color: #f91880;
+}
+
+.load-more {
+  display: block;
+  width: 30%;
+}
+.load-more-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+}
+
+.column3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
+  background-color: rgb(255, 255, 255);
+  box-shadow: -5px 0 10px -5px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+.column3 h1 {
+  font-family: "Roboto", sans-serif;
+}
+
+.search-container {
+  position: relative;
+  width: 70%;
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+  color: #7a7a7a;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.search {
+  padding-left: 40px !important;
+  width: 100%;
+  background-color: #eaeef3 !important;
+}
+
+.card {
+  width: 70%;
+  border-color: #2f3336;
+  background-color: #eaeef3 !important;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.avatar {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ margin-left: 40px
+}
+
