@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(229, 196, 196);
 }
 
 .App-link {
@@ -32,7 +32,248 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.clothing-store-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+
+}
+
+.navBar {
+  background: #313131;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 5%;
+  gap: 30px;
+
+
+}
+
+.navBar:hover {
+  cursor: pointer;
+
+
+}
+
+.navBar2 {
+  background: #CECECE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 5%;
+  gap: 35px;
+
+
+}
+
+.nav-items {
+  display: flex;
+  gap: 4rem;
+  margin-right: 150px;
+  font-size: 20px;
+  gap: 100px;
+  margin-right: 315px;
+}
+
+.nav-items2 {
+  display: flex;
+  gap: 4rem;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+  scale: 1.2;
+
+}
+
+.shopping-icon {
+  display: flex;
+  align-items: center;
+  scale: 1.2;
+  margin-left: -60px;
+
+}
+
+.clothing-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid cornflowerblue;
+  height: 100%;
+  width: 25%;
+  border-radius: 3px;
+  padding:10px;
+}
+
+.clothing-item-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  height: auto;
+
+
+
+}
+
+.main-content-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 75vh;
+  position: relative;
+
+
+}
+
+.back-img img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+  /* x%, y% */
+}
+
+.back-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.footer {
+  background: #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+
+}
+
+.explore-btn-con {
+  display: flex;
+  border: solid #E09F9F 5px;
+  position: relative;
+  margin-bottom: 40px;
+  z-index: 1;
+  margin-top: 40px;
+  top: 170px;
+  left: 65%;
+  width: 20%;
+  height: 15%;
+}
+
+.explore-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DB6363;
+  background: white;
+  font-size: 46px;
+  width: 100%;
+  height: 100%;
+  z-index: 2
+}
+
+.sale-marker p {
+  position: absolute;
+  right: 0px;
+  background: #cb2121;
+  color: white;
+  align-items: end;
+  justify-content: flex-end;
+  width: 20%;
+  height: 35%;
+  z-index: 3;
+  font-size: 24px;
+  top: -25px;
+  font-weight: bold;
+
+}
+
+.explore-btn-con:hover {
+  cursor: pointer;
+  border: solid rgb(156, 45, 45) 5px;
+
+}
+
+.explore-btn-con:hover .sale-marker p {
+  background: white;
+  color: rgb(188, 59, 59);
+
+
+}
+
+.explore-btn:hover {
+  color: #f8f8f8;
+  background: rgb(175, 47, 47);
+
+
+}
+
+.order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: solid rgb(173, 173, 173) 2px;
+  width: 40%;
+  height: 10%;
+  background: rgb(76, 76, 76);
+  color: rgb(255, 255, 255);
+
+}
+
+.order-btn:hover {
+  border-radius: 10px;
+  border: solid rgb(85, 85, 85) 2px;
+  background: rgb(115, 115, 115);
+  cursor: pointer;
+
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white;
+  width: 70%;
+  height: 200px;
+  background-color: rgb(128, 53, 53);
+  transition: opacity 1s ease;
+  z-index: 4;
+
+}
+
+.dropdown-con {
+  display: flex;
+  margin-left:-200px;
+  width: 15%;
+  height: 20%;
+
+
 }
