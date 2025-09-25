@@ -1,0 +1,113 @@
+.forside {
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+.overskrift {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.nykontakt {
+    border: none;
+    background-color: rgb(41, 180, 235);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.kontakttitle {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.kontakttekst {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kontaktinput {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.kontaktfelt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.kontaktknap {
+    border: none;
+    background-color: rgb(41, 180, 235);
+    padding: 8px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 60px;
+    
+}
+
+.kontakterh2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ingenkontakter {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.kontaktertemplate {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 500px;
+    border: solid 1px black;
+    border-radius: 10px;
+    list-style: none;
+    margin-top: 25px;
+    height: auto;
+    gap: 10px;
+    background-color: rgba(162, 255, 255, 0.113);
+}
+
+.kontaktelement {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.uldiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
